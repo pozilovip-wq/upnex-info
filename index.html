@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UPNEX — 2027 Bahor qabuli | AQSHda o'qish</title>
+<meta name="description" content="AQSHning 40+ hamkor universiteti, yiliga $32 000 gacha grant imkoniyati va viza-hujjatlarda to'liq yordam. 2027-yil bahor qabuli uchun Telegram botga yozing." />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="UPNEX — 2027 Bahor qabuli | AQSHda o'qish" />
+<meta property="og:description" content="40+ hamkor universitet, $32 000/yilgacha grant imkoniyati, viza va hujjatlarda boshidan oxirigacha yordam. Botga start bering." />
+<meta property="og:url" content="https://upnex-info.netlify.app/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1224'/%3E%3Cpath d='M16 40 L28 26 L38 34 L48 18' stroke='%23e3b34d' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M38 18 H48 V28' stroke='%23e3b34d' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy: #060b18;
+    --navy-2: #0c1730;
+    --gold: #e3b34d;
+    --gold-2: #f3cd76;
+    --ink: #f4f2ec;
+    --ink-dim: #b7bfd1;
+    --ring: rgba(227,179,77,0.08);
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:auto; }
+  body{
+    background: var(--navy);
+    color: var(--ink);
+    font-family: 'Inter', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a{ color:inherit; text-decoration:none; }
+  img{ max-width:100%; display:block; }
+
+  .rings{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    background:
+      radial-gradient(circle at 50% 38%, rgba(227,179,77,0.10), transparent 22%),
+      repeating-radial-gradient(circle at 50% 38%, transparent 0, transparent 70px, var(--ring) 71px, var(--ring) 72px);
+    pointer-events:none;
+  }
+
+  .hero{
+    position:relative;
+    min-height:100svh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 96px 24px 64px;
+    text-align:center;
+    background: linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 60%, var(--navy) 100%);
+    overflow:hidden;
+  }
+
+  .hero-inner{
+    position:relative;
+    z-index:1;
+    max-width: 760px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 22px;
+  }
+
+  .logo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    margin-bottom: 6px;
+  }
+  .logo-mark{
+    width:64px; height:64px;
+    border-radius:16px;
+    background: linear-gradient(155deg, #101c38, #0a1327);
+    border:1px solid rgba(227,179,77,0.25);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow: 0 0 40px rgba(227,179,77,0.12);
+  }
+  .logo-word{
+    font-family:'Manrope', sans-serif;
+    font-weight:800;
+    font-size:22px;
+    letter-spacing:0.14em;
+    color: var(--ink);
+  }
+  .logo-word span{ color: var(--gold); }
+
+  .eyebrow{
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color: var(--gold-2);
+    border:1px solid rgba(227,179,77,0.35);
+    padding:8px 18px;
+    border-radius:999px;
+    background: rgba(227,179,77,0.06);
+  }
+
+  h1{
+    font-family:'Manrope', sans-serif;
+    font-weight:800;
+    line-height:1.12;
+    font-size: clamp(34px, 5.6vw, 58px);
+    letter-spacing:-0.01em;
+  }
+  h1 .accent{ color: var(--gold); }
+
+  .sub{
+    max-width: 560px;
+    font-size: clamp(15.5px, 2vw, 18px);
+    line-height:1.65;
+    color: var(--ink-dim);
+  }
+  .sub b{ color: var(--ink); font-weight:600; }
+
+  .hint{
+    font-size:13.5px;
+    color: var(--ink-dim);
+    opacity:0.8;
+    margin-top:4px;
+  }
+  .chevron{
+    margin-top:2px;
+    color: var(--gold);
+    animation: bob 2.2s ease-in-out infinite;
+  }
+  @keyframes bob{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(6px); }
+  }
+
+  .cta{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-top: 6px;
+    padding: 16px 30px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--gold-2), var(--gold));
+    color: #1a1305;
+    font-weight:700;
+    font-size:16px;
+    box-shadow: 0 10px 30px rgba(227,179,77,0.25);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .cta:hover{ transform: translateY(-2px); box-shadow: 0 14px 36px rgba(227,179,77,0.35); }
+  .cta svg{ width:18px; height:18px; }
+
+  .stats{
+    position:relative;
+    z-index:1;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 14px;
+    justify-content:center;
+    margin-top: 30px;
+  }
+  .stat{
+    padding: 14px 22px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    min-width: 128px;
+  }
+  .stat .n{
+    font-family:'Manrope', sans-serif;
+    font-weight:800;
+    font-size:22px;
+    color: var(--gold-2);
+  }
+  .stat .l{
+    font-size:12px;
+    color: var(--ink-dim);
+    margin-top:2px;
+  }
+
+  section{ position:relative; padding: 84px 24px; }
+  .section-inner{ max-width: 1040px; margin:0 auto; }
+
+  .section-head{ text-align:center; max-width:600px; margin:0 auto 48px; }
+  .section-head .eyebrow{ margin-bottom:16px; }
+  .section-head h2{
+    font-family:'Manrope', sans-serif;
+    font-weight:800;
+    font-size: clamp(26px, 3.6vw, 36px);
+    line-height:1.2;
+  }
+  .section-head p{
+    margin-top:14px;
+    color: var(--ink-dim);
+    font-size:15.5px;
+    line-height:1.6;
+  }
+
+  .cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+  }
+  .card{
+    padding: 26px 22px;
+    border-radius: 16px;
+    background: linear-gradient(160deg, rgba(255,255,255,0.035), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .card .ic{
+    width:40px; height:40px;
+    border-radius:10px;
+    background: rgba(227,179,77,0.12);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--gold);
+    margin-bottom:16px;
+  }
+  .card h3{
+    font-family:'Manrope', sans-serif;
+    font-size:17px;
+    font-weight:700;
+    margin-bottom:8px;
+  }
+  .card p{
+    font-size:14px;
+    line-height:1.6;
+    color: var(--ink-dim);
+  }
+
+  .closing{
+    text-align:center;
+    background: var(--navy-2);
+    border-top:1px solid rgba(255,255,255,0.06);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+  }
+  .closing .section-inner{ max-width:600px; }
+  .closing h2{
+    font-family:'Manrope', sans-serif;
+    font-weight:800;
+    font-size: clamp(24px, 3.4vw, 32px);
+    margin-bottom:14px;
+  }
+  .closing p{ color: var(--ink-dim); font-size:15px; line-height:1.6; margin-bottom:26px; }
+
+  footer{
+    padding: 32px 24px 40px;
+    text-align:center;
+    color: var(--ink-dim);
+    font-size:13px;
+  }
+  footer a{ color: var(--gold-2); }
+  footer .foot-links{ margin-top:8px; display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="rings"></div>
+  <div class="hero-inner">
+    <div class="logo">
+      <div class="logo-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 64 64" fill="none">
+          <path d="M14 42 L27 27 L37 35 L50 18" stroke="#e3b34d" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M37 18 H50 V31" stroke="#e3b34d" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="logo-word">UPNEX<span>.</span></div>
+    </div>
+
+    <div class="eyebrow">2027 BAHOR QABULI — AQSH YO'NALISHI</div>
+
+    <h1>AQSHda o'qish —<br><span class="accent">pul emas, reja</span> masalasi</h1>
+
+    <p class="sub">
+      <b>40 dan ortiq</b> hamkor universitet, yiliga <b>$32 000 gacha</b> grant imkoniyati va viza-hujjatlarda boshidan oxirigacha yordam.
+      Buni AQSHning o'zida o'qigan va <b>50 dan ortiq talabani</b> joylashtirgan jamoa boshqaradi.
+    </p>
+
+    <a class="cta" href="https://t.me/upnex_uzbot" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.05 3.62 2.98 10.63c-1.23.5-1.22 1.2-.22 1.5l4.63 1.45 1.78 5.42c.22.6.37.84.75.84.34 0 .5-.16.7-.36l1.7-1.65 3.65 2.7c.67.37 1.15.18 1.32-.62l2.4-11.3c.26-1-.37-1.42-1.68-.99Z"/></svg>
+      Telegram botga yozish
+    </a>
+    <div class="hint">Boshlash uchun tugmani bosing — bot 5 daqiqada sizga mos universitetni aniqlaydi</div>
+
+    <div class="stats">
+      <div class="stat"><div class="n">40+</div><div class="l">AQSH universiteti</div></div>
+      <div class="stat"><div class="n">$32k</div><div class="l">yiliga grantgacha</div></div>
+      <div class="stat"><div class="n">50+</div><div class="l">joylashtirilgan talaba</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="svc">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="eyebrow">XIZMATLAR</div>
+      <h2>Hujjat topshirishdan aeroportgacha — birga</h2>
+      <p>Universitet tanlashdan boshlab, AQSH tuprog'iga qadam qo'yguningizcha — har bosqichda yoningizdamiz.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10v6c0 1.5 2.5 3 6 3s6-1.5 6-3v-6"/></svg></div>
+        <h3>Universitet va dastur tanlovi</h3>
+        <p>Byudjet, yo'nalish va shaharga qarab sizga mos 3–5 ta universitetni aniqlaymiz, ariza hujjatlarini birga tayyorlaymiz.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M8 13 6 21l6-3 6 3-2-8"/></svg></div>
+        <h3>Grant va stipendiya</h3>
+        <p>Har bir universitetning grant imkoniyatlarini aniq raqamlarda ko'rsatamiz — bo'sh va'da bermaymiz, faqat real variantlar.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
+        <h3>Viza tayyorgarligi</h3>
+        <p>F-1 viza intervyusiga tayyorlaymiz, ko'p uchraydigan rad etish sabablarini oldindan bartaraf qilamiz.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h13M11 6l6 6-6 6"/><path d="M18 6v12"/></svg></div>
+        <h3>Yo'lga tayyorgarlik</h3>
+        <p>Chipta, turar joy va AQSHdagi birinchi kunlaringiz uchun bosqichma-bosqich yo'l-yo'riq beramiz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="section-inner">
+    <h2>2027-yil bahor semestriga joylar cheklangan</h2>
+    <p>Bugun botga start bering — savollaringizga javob olasiz va qaysi universitet sizga mosligini bilib olasiz.</p>
+    <a class="cta" href="https://t.me/upnex_uzbot" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.05 3.62 2.98 10.63c-1.23.5-1.22 1.2-.22 1.5l4.63 1.45 1.78 5.42c.22.6.37.84.75.84.34 0 .5-.16.7-.36l1.7-1.65 3.65 2.7c.67.37 1.15.18 1.32-.62l2.4-11.3c.26-1-.37-1.42-1.68-.99Z"/></svg>
+      @upnex_uzbot ga yozish
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 UPNEX. Andijon, O'zbekiston.</div>
+  <div class="foot-links">
+    <a href="https://t.me/upnex_uzbot" target="_blank" rel="noopener">Telegram bot</a>
+  </div>
+</footer>
+
+</body>
+</html>
